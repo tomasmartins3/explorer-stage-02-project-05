@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #89C5CC;
+  --secondary-color: #69B99D;
+  --secondary-color-darker: #5ca189;
+  --header-color: #1F1534;
+  --link-color: #1f153480;
+  --text-color: #7D7987;
+  --white-color: #fff;
+
+  --font-family: 'Open Sans', sans-serif;
+  --font-family-header: 'Mulish', sans-serif;
+  --font-size: 1rem;
+  --font-size-header: 3rem;
+  --line-height: 1.75rem;
+  --line-height-header: 3.5rem;
+}
+
+body {
+  min-height: calc(100vh - 3.5rem);
+  margin: 0;
+  padding-top: 3.5rem;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-header);
+  font-weight: normal;
+  line-height: var(--line-height-header);
+  color: var(--header-color);
+}
+
+
+.container {
+  width: 1000px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 1rem 1.75rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: .25rem;
+  transition: background-color 400ms;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-darker);
+}
+
+.btn.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+}
+.btn.btn-action img {
+  margin-right: .25rem;
+}
+
+nav a.active {
+  color: var(--header-color);
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--header-color);
+  font-weight: bold;
+}
+
+
+/* Page style */
+header nav {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+header nav ul li {
+  width: 60px;
+  text-align: center;
+}
+
+main {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+main .text-section {
+  width: 490px;
+}
+main .text-section p.description{
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+  line-height: var(--line-height);
+}
+
+.decoration-section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
